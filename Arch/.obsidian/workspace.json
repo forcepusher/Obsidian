@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Welcome.md",
+                "file": "com.bananaparty.arch.docs.ru.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Welcome"
+              "title": "com.bananaparty.arch.docs.ru"
             }
           }
         ]
@@ -181,8 +181,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "6ca55c6ab6e10121",
+  "active": "6d2b487b1e25d173",
   "lastOpenFiles": [
-    "Welcome.md"
+    "malinoviyzvon.mp4",
+    "com.bananaparty.arch.docs.ru.md",
+    "media/malinoviyzvon.mp4",
+    "media"
   ]
 }
