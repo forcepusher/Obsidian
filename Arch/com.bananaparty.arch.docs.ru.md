@@ -14,12 +14,12 @@
 - Объекты должны имплементировать одну фичу, S это не просто так первая буква в SOLID. Ещё объекты должны быть самодостаточными. По завершению исполнения конструктора, у объекта должны быть все необходимые данные и ссылки для исполнения своей задачи. В случае с Unity, конструктор это референсы/поля инспектора и Awake.
   (источник: Robert Martin, Егор Бугаенко, и я со своим Unity)
 - Объект состоит из поведения и состояния. Поведение - главный признак объекта, не бывает поведения в вакууме. Объектов без поведения тоже не бывает, это структура. Поэтому деление на Model, View и Controller (либо другой MV*) это ошибка дизайна.
-  (источники: David West и Егор Бугаенко)
-- В наименовании класса содержится 80% решения проблемы, это источник правильного мышления. Имя не должно быть излишне абстрактным - наоборот, ненадо бояться конкретики. И не пытайтесь набить цену вашему классу, продавая его умным названием. Если назвать дом хендлером жителей, то и делать будешь хендлер жителей, а не дом.
+  (источники: [David West]([(1) Interview with David West (part 1) - YouTube](https://www.youtube.com/watch?v=s-hdZZzMCac)) и Егор Бугаенко)
+- В наименовании класса содержится 80% решения проблемы, это источник правильного мышления. Имя не должно быть излишне абстрактным - наоборот, ненадо бояться конкретики. И не пытайтесь набить цену своему классу, продавая его умным названием. Если назвать дом хендлером жителей, то и делать будешь хендлер жителей, а не дом.
   (источник: тоже я)
 - Избегать названия объектов, образованных от глагола (Manager, Controller, Presenter, Handler), оно должно оканчиваться существительным. Основной детектор ошибки это окончания -er. Да, бывают существительные как Character, Computer, но идею вы поняли.
   Объекты надо называть исходя из того что они содержат и чем являются.
-  (источники: Егор Бугаенко, Peter Coad, Carlo Pescio, Travis Griggs, Ben Hall)
+  (источники: Егор Бугаенко, [Peter Coad]([Peter Coad - Wikipedia](https://en.wikipedia.org/wiki/Peter_Coad)), [Carlo Pescio]([Carlo Pescio: Your coding conventions are hurting you](https://www.carlopescio.com/2011/04/your-coding-conventions-are-hurting-you.html)), [Travis Griggs]([Objology: One of the Best Bits of Programming Advice I ever Got](https://objology.blogspot.com/2011/09/one-of-best-bits-of-programming-advice.html)), [Ben Hall]([Naming Objects – Don’t use ER in your object names | Engineering Rants and Raves](https://web.archive.org/web/20130116152533/https://www.benhallbenhall.com/2013/01/naming-objects-er-object-names/)), и [Ben Dover]([Rick Astley - Never Gonna Give You Up (Official Video) (4K Remaster)](https://www.youtube.com/watch?v=dQw4w9WgXcQ)))
 #### Волшебные скрипты для архитектуры в Unity
 - Инспектор это наш конструктор в монобехах.
 #### Как выжить без толпы тестировщиков
