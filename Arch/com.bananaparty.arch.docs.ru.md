@@ -5,7 +5,7 @@
 - На практике мы нырнём сразу в дело и сделаем с помощью пары скриптов то, ради чего в Unity проект несут несколько лагучих неудобных фреймворков.
 - Так же будет блок по авто тестированию проектов. Никто вам не выделит целый отдел тестировщиков. Не у всех есть бюджет, чтоб закидать проблему деньгами.
 ## TL;DR выжимки
-Хороший код человек пишет в первые 1-2 года своей карьеры. Затем только через 10-15 лет.
+Хороший код человек пишет в первые 1-2 года своей карьеры. Затем только через 10-15 лет. Чем быстрей вы выйдите из середины, тем проще будет жить вам и всем окружающим.
 ![[linesperhourprogrammer.png]]
 Пункты будут доработаны из TL;DR версии в полный трактат по запросу "пояснить за базар".
 #### TL;DR: Спидран по ~~тиктоку~~ философии объекта
@@ -21,7 +21,8 @@
   Объекты надо называть исходя из того что они содержат или чем по сути являются.
   (источники: Егор Бугаенко, [Peter Coad]([Peter Coad - Wikipedia](https://en.wikipedia.org/wiki/Peter_Coad)), [Carlo Pescio]([Carlo Pescio: Your coding conventions are hurting you](https://www.carlopescio.com/2011/04/your-coding-conventions-are-hurting-you.html)), [Travis Griggs]([Objology: One of the Best Bits of Programming Advice I ever Got](https://objology.blogspot.com/2011/09/one-of-best-bits-of-programming-advice.html)), [Ben Hall]([Naming Objects – Don’t use ER in your object names | Engineering Rants and Raves](https://web.archive.org/web/20130116152533/https://www.benhallbenhall.com/2013/01/naming-objects-er-object-names/)), и [Ben Dover]([Rick Astley - Never Gonna Give You Up (Official Video) (4K Remaster)](https://www.youtube.com/watch?v=dQw4w9WgXcQ)))
 #### TL;DR: Волшебные скрипты для архитектуры в Unity
-
+Если всё что выше нихрена непонятно - ничего страшного. У нас есть волшебные бобы.
+- Ситуация "Я хочу глобальные скрипты)))))0 а техлид говорит нельзя статику((((((((99".
 #### TL;DR: Как выжить без толпы тестировщиков
 
 
