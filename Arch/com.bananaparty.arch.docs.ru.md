@@ -23,9 +23,6 @@
   (источники: Егор Бугаенко, [Peter Coad]([Peter Coad - Wikipedia](https://en.wikipedia.org/wiki/Peter_Coad)), [Carlo Pescio]([Carlo Pescio: Your coding conventions are hurting you](https://www.carlopescio.com/2011/04/your-coding-conventions-are-hurting-you.html)), [Travis Griggs]([Objology: One of the Best Bits of Programming Advice I ever Got](https://objology.blogspot.com/2011/09/one-of-best-bits-of-programming-advice.html)), [Ben Hall]([Naming Objects – Don’t use ER in your object names | Engineering Rants and Raves](https://web.archive.org/web/20130116152533/https://www.benhallbenhall.com/2013/01/naming-objects-er-object-names/)), и [Ben Dover]([Rick Astley - Never Gonna Give You Up (Official Video) (4K Remaster)](https://www.youtube.com/watch?v=dQw4w9WgXcQ)))
 #### TL;DR: Волшебные скрипты для архитектуры в Unity
 Если всё что выше непонятно - ничего страшного. У нас есть волшебные бобы.
+Каждый из ~~скриптов~~ бобов решает точечну одну проблему, и доставать его из мешочка мы будем только тогда, когда проблема физически материализуется, вместо того чтоб бежать впереди паровоза и городить какую-то бесполезную херню заранее.
 - Ситуация "Я хочу глобальные скрипты)))))0 а техлид говорит нельзя статику((((((((99".
 #### TL;DR: Как выжить без толпы тестировщиков
-
-
-
-Плясать под дудку фреймворка и додика который его пропихивает в проект. А что, если можно решить точнчно только саму проблему, и по мере её поступления, а не городить сразу огород под MMO Ведьмак 6? Именно так и захочет бизнес.
