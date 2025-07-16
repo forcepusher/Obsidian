@@ -18,7 +18,7 @@
 - В наименовании класса содержится 90% решения проблемы, это источник правильного мышления. Имя не должно быть излишне абстрактным - наоборот, ненадо бояться конкретики. И не пытайтесь набить цену своему классу, продавая его умным названием. Если назвать дом хендлером жителей, то и делать будешь хендлер жителей, а не дом.
   (источник: тоже я)
 - Избегать названия объектов, образованных от глагола (Manager, Controller, Presenter, Handler), оно должно оканчиваться существительным. Основной детектор ошибки это окончания -er. Да, бывают существительные как Character, Computer, но идею вы поняли.
-  Объекты надо называть исходя из того что они содержат и чем являются.
+  Объекты надо называть исходя из того что они содержат или чем по сути являются.
   (источники: Егор Бугаенко, [Peter Coad]([Peter Coad - Wikipedia](https://en.wikipedia.org/wiki/Peter_Coad)), [Carlo Pescio]([Carlo Pescio: Your coding conventions are hurting you](https://www.carlopescio.com/2011/04/your-coding-conventions-are-hurting-you.html)), [Travis Griggs]([Objology: One of the Best Bits of Programming Advice I ever Got](https://objology.blogspot.com/2011/09/one-of-best-bits-of-programming-advice.html)), [Ben Hall]([Naming Objects – Don’t use ER in your object names | Engineering Rants and Raves](https://web.archive.org/web/20130116152533/https://www.benhallbenhall.com/2013/01/naming-objects-er-object-names/)), и [Ben Dover]([Rick Astley - Never Gonna Give You Up (Official Video) (4K Remaster)](https://www.youtube.com/watch?v=dQw4w9WgXcQ)))
 #### Волшебные скрипты для архитектуры в Unity
 - Инспектор это наш конструктор в монобехах.
