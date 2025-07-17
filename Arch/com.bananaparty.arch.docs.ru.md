@@ -29,6 +29,6 @@
 - Ситуация "Я хочу глобальные скрипты)))))0 а техлид говорит нельзя статику((((((((99".
   Это прямо жиза. Короче, делаем префаб для глобальных скриптов, суём в него все наши любимые синглтоны (стирая из них все static Instance поля, либо отключая галку в ассетах).
   Берём [GlobalPrefabAsset.cs](https://github.com/forcepusher/com.bananaparty.arch/blob/288dbe6a0e7e225c48e257e833583992b4eb32ba/Runtime/GlobalPrefabAsset.cs), создаём в любой папке этот ScriptableObject, и суём в него наш глобальный префаб. Ну вот и всё, проблема решена.
-  Он так же будет автоматом подгружаться в тест раннере, что для нас гигантский профит. Если вдруг нужно убрать его из тестов, заюзайте [IPrebuildSetup и IPostBuildCleanup](https://docs.unity3d.com/6000.2/Documentation/Manual/test-framework/course/build-setup-cleanup.html).
+  Он так же будет автоматом подгружаться в тест раннере, что для нас гигантский профит. Если вдруг нужно убрать его из тестов, заюзайте [IPrebuildSetup и IPostBuildCleanup](https://docs.unity3d.com/6000.2/Documentation/Manual/test-framework/course/build-setup-cleanup.html). Можно допилить скрипт и сделать галку-убиралку из тестов, по запросу.
 - 
 #### TL;DR: Как выжить без толпы тестировщиков
