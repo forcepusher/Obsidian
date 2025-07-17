@@ -34,6 +34,10 @@
   Та же самая стратегия когда ссылаемся что-то на сцене, аналогично SceneContext из DI.
 - Ситуация "Ля, а давай бахнем FindObjectsOfType в апдейте?".
   Эта же штука [ReferenceAsset.cs](https://github.com/forcepusher/com.bananaparty.arch/blob/288dbe6a0e7e225c48e257e833583992b4eb32ba/Runtime/ReferenceAsset.cs) покрывает все юзкейсы FindObject(s)OfType. Для множества объектов есть [ReferenceListAsset.cs](https://github.com/forcepusher/com.bananaparty.arch/blob/288dbe6a0e7e225c48e257e833583992b4eb32ba/Runtime/ReferenceListAsset.cs). Последнее часто нужно в создании ботов, чтобы передавать им что происходит на сцене. Естественно FindObjectsOfType станет главным ботлнеком производительности, не успеешь откыть и охоту крепкую.
+- Ситуация "А давай [шину ебанём](media/eventbusoop.jpg)?".
+  Максимально осуждаю, но даже для таких месье у нас есть свой [флюгегехаймен](https://rutube.ru/video/ff6130dac6536ac277a142dc8e0f6ba4/?t=78&r=plwd).
+  
+  
 #### TL;DR: Как выжить без толпы тестировщиков
 
  [GlobalPrefabAsset.cs](https://github.com/forcepusher/com.bananaparty.arch/blob/288dbe6a0e7e225c48e257e833583992b4eb32ba/Runtime/GlobalPrefabAsset.cs) автоматом подгружаться в тест раннере, что для нас гигантский профит. Если вдруг нужно убрать его из тестов, заюзайте [IPrebuildSetup и IPostBuildCleanup](https://docs.unity3d.com/6000.2/Documentation/Manual/test-framework/course/build-setup-cleanup.html). Можно допилить скрипт и сделать галку-убиралку из тестов, по запросу.
