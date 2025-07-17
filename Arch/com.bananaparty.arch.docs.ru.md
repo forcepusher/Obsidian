@@ -29,4 +29,5 @@
 - Бонусная ситуация "Не хочу ссылаться на сцену по стринге, я чё лох штоли?"<br>Одобряю. Держи браза [SceneReference.cs](https://github.com/forcepusher/com.bananaparty.arch/blob/288dbe6a0e7e225c48e257e833583992b4eb32ba/Runtime/SceneReference.cs).
 #### TL;DR: Как выжить без толпы тестировщиков
 
+ЧЕРНОВИК:
  [GlobalPrefabAsset.cs](https://github.com/forcepusher/com.bananaparty.arch/blob/288dbe6a0e7e225c48e257e833583992b4eb32ba/Runtime/GlobalPrefabAsset.cs) автоматом подгружаться в тест раннере, что для нас гигантский профит. Если вдруг нужно убрать его из тестов, заюзайте [IPrebuildSetup и IPostBuildCleanup](https://docs.unity3d.com/6000.2/Documentation/Manual/test-framework/course/build-setup-cleanup.html). Можно допилить скрипт и сделать галку-убиралку из тестов, по запросу.
