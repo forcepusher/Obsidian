@@ -17,8 +17,7 @@
 ### TL;DR: Волшебные скрипты для архитектуры в Unity
 Если философия выше непонятна - ничего страшного, у нас есть волшебные ~~бобы~~ скрипты.
 Каждый из скриптов решает точечно одну проблему, и доставать их из мешочка мы будем только тогда, когда проблема физически материализуется, вместо того чтоб бежать впереди паровоза и городить какую-то бесполезную херню заранее, пытаясь предугадать все правки, требования паблишеров, и давление мочевины в голове гейм дизайнера.<br>
-<br>Вот наш набор скриптов [https://github.com/forcepusher/com.bananaparty.arch](https://github.com/forcepusher/com.bananaparty.arch)
-Разберём типичные ситуации:
+<br>Вот наш набор скриптов [https://github.com/forcepusher/com.bananaparty.arch](https://github.com/forcepusher/com.bananaparty.arch)<br>Разберём типичные ситуации:
 - Ситуация "Я хочу глобальные скрипты)))))0 а техлид говорит нельзя статику((((((((99".<br>Это прямо жиза. Короче, делаем префаб для глобальных скриптов, суём в него все наши любимые синглтоны (стирая из них все static Instance поля, либо отключая галку в ассетах).
   Берём [GlobalPrefabAsset.cs](https://github.com/forcepusher/com.bananaparty.arch/blob/288dbe6a0e7e225c48e257e833583992b4eb32ba/Runtime/GlobalPrefabAsset.cs), создаём в любой папке этот ScriptableObject, и суём в него наш глобальный префаб. Ну вот и всё, теперь у нас есть по сути GlobalContext из DI.
 - Ситуация "Погоди браза, а как на этот GlobalContext теперь ссылаться то?".<br>Да легко, просто юзай FindObjectOfType. Шутка, но принцип работы у [ReferenceAsset.cs](https://github.com/forcepusher/com.bananaparty.arch/blob/288dbe6a0e7e225c48e257e833583992b4eb32ba/Runtime/ReferenceAsset.cs)тот же. Различие в том, что референсы в этот ScriptableObject мы забиваем заранее сами в рантайме, используя [ReferenceSource.cs](https://github.com/forcepusher/com.bananaparty.arch/blob/288dbe6a0e7e225c48e257e833583992b4eb32ba/Runtime/ReferenceSource.cs), который будет лежать рядом с компонентом.
