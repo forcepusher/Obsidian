@@ -31,7 +31,7 @@
   Берём [GlobalPrefabAsset.cs](https://github.com/forcepusher/com.bananaparty.arch/blob/288dbe6a0e7e225c48e257e833583992b4eb32ba/Runtime/GlobalPrefabAsset.cs), создаём в любой папке этот ScriptableObject, и суём в него наш глобальный префаб. Ну вот и всё, теперь у нас есть по сути GlobalContext из DI.
 - Ситуация "Погоди браза, а как на этот GlobalContext теперь ссылаться то?".
   Да легко, просто юзай FindObjectOfType. Шутка, но принцип работы у [ReferenceAsset.cs](https://github.com/forcepusher/com.bananaparty.arch/blob/288dbe6a0e7e225c48e257e833583992b4eb32ba/Runtime/ReferenceAsset.cs)тот же. Различие в том, что референсы в этот ScriptableObject мы забиваем заранее сами в рантайме, используя [ReferenceSource.cs](https://github.com/forcepusher/com.bananaparty.arch/blob/288dbe6a0e7e225c48e257e833583992b4eb32ba/Runtime/ReferenceSource.cs), который будет лежать рядом с компонентом.
-  Та же самая стратегия когда ссылаемся что-то на сцене, на аналогию SceneContext из DI.
+  Та же самая стратегия когда ссылаемся что-то на сцене, аналогично SceneContext из DI.
 - Ситуация "Ля, а давай бахнем FindObjectsOfType в апдейте?".
   Эта же штука [ReferenceAsset.cs](https://github.com/forcepusher/com.bananaparty.arch/blob/288dbe6a0e7e225c48e257e833583992b4eb32ba/Runtime/ReferenceAsset.cs) покрывает все юзкейсы FindObject(s)OfType. Для множества объектов есть [ReferenceListAsset.cs](https://github.com/forcepusher/com.bananaparty.arch/blob/288dbe6a0e7e225c48e257e833583992b4eb32ba/Runtime/ReferenceListAsset.cs). Последнее часто нужно в создании ботов, чтобы передавать им что происходит на сцене. Естественно FindObjectsOfType станет главным ботлнеком производительности, не успеешь откыть и охоту крепкую.
 #### TL;DR: Как выжить без толпы тестировщиков
