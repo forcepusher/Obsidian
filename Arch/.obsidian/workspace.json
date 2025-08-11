@@ -6,7 +6,6 @@
       {
         "id": "c809fc3a1f36eb13",
         "type": "tabs",
-        "dimension": 62.53943217665615,
         "children": [
           {
             "id": "6d2b487b1e25d173",
@@ -20,23 +19,6 @@
               },
               "icon": "lucide-file",
               "title": "com.bananaparty.arch.docs.ru"
-            }
-          }
-        ]
-      },
-      {
-        "id": "1342736a85964e50",
-        "type": "tabs",
-        "dimension": 37.46056782334385,
-        "children": [
-          {
-            "id": "6ca55c6ab6e10121",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
             }
           }
         ]
@@ -183,7 +165,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "6ca55c6ab6e10121",
+  "active": "6d2b487b1e25d173",
   "lastOpenFiles": [
     "com.bananaparty.arch.docs.ru.md",
     "media/antonovkaarchitecture.mp4",
