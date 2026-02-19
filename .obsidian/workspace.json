@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "43f70890f948604b",
+        "id": "09414e90d149e157",
         "type": "tabs",
         "children": [
           {
-            "id": "a4044d908e8301d9",
+            "id": "f8ed3ed09c106fc1",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -183,6 +183,9 @@
       "bases:Create new base": false
     }
   },
-  "active": "a4044d908e8301d9",
-  "lastOpenFiles": []
+  "active": "f8ed3ed09c106fc1",
+  "lastOpenFiles": [
+    "[Inversion.md",
+    "Arch/com.bananaparty.arch.docs.ru.md"
+  ]
 }
